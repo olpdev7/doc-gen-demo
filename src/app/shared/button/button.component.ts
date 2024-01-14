@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
  * Represents a button component.
@@ -14,6 +14,17 @@ import { Component } from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
+
+  /**
+   * Represents the input for abc operation.
+   *
+   * @typedef {Object} abcInput
+   * @property {string} [abcInput] - The optional input value for abc operation.
+   */
+  @Input() abcInput?: string;
+
+  private x123 = 123;
+
   /**
    * Returns the value 123.
    *

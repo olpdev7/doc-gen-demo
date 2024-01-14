@@ -1,4 +1,3 @@
-import { NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent } from "@ng-doc/app";
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
@@ -10,10 +9,8 @@ import { CoreModule } from './core/core.module';
   imports: [
     CommonModule,
     CoreModule,
-    RouterOutlet,
-    NgDocRootComponent,
-    NgDocNavbarComponent,
-    NgDocSidebarComponent],
+    RouterOutlet
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
