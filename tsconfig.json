@@ -2,6 +2,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ng-doc/generated": [
+        "./ng-doc/testapp/index.ts"
+      ],
+      "@ng-doc/generated/*": [
+        "./ng-doc/testapp/*"
+      ]
+    },
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
